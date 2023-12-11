@@ -21,6 +21,8 @@ const oneSignalAppId =
     : process.env.EXPO_PUBLIC_ANDROID_ONE_SIGNAL_APP_ID;
 OneSignal.setAppId(oneSignalAppId ?? "");
 
+OneSignal.setEmail("amanda@email.com");
+
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
 
